@@ -1,0 +1,787 @@
+<html lang="en">
+<head>
+<style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+</style>
+<style class="vjs-styles-dimensions">
+      .vid1-dimensions {
+        width: 640px;
+        height: 360px;
+      }
+
+      .vid1-dimensions.vjs-fluid {
+        padding-top: 56.25%;
+      }
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- VIDEOJS keep old version -->
+<link rel="stylesheet" media="screen" href="https://vjs.zencdn.net/5.4.6/video-js.min.css">
+
+    <!-- BOOTSTRAP  -->
+<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+    <!--    <link rel="stylesheet" media="screen" href="https://bootswatch.com/yeti/bootstrap.min.css">-->
+<link rel="stylesheet" media="screen" href="https://bootswatch.com/superhero/bootstrap.css">
+
+    <!-- bootstrap select  -->
+<link rel="stylesheet" media="screen" href="https://cdn.rawgit.com/silviomoreto/bootstrap-select/master/dist/css/bootstrap-select.min.css">
+
+    <!-- bootstrap-slider  -->
+<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.1.0/css/bootstrap-slider.min.css">
+
+    <!-- bootstrap font awesome  -->
+<link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- bootstrap-colorpicker  -->
+<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.3.3/css/bootstrap-colorpicker.min.css">
+
+    <!-- bootstrap-Radio checkbox   -->
+<link rel="stylesheet" media="screen" href="https://cdn.rawgit.com/flatlogic/awesome-bootstrap-checkbox/master/demo/build.css">
+
+<script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflWbfRpo/www-widgetapi.js" async="">
+</script>
+<script async="" src="https://www.google-analytics.com/analytics.js">
+</script>
+<script src="https://www.youtube.com/iframe_api">
+</script>
+<script src="js/skin.json">
+</script>
+<style type="text/css">
+</style>
+
+    <title>Videojs Skin generator | Videojs Playground</title>
+
+    <style>
+        /* Page style */
+        /*        For superhero skin*/
+        .adminShow {
+            display: none
+        }
+        .input-group-addon {
+            background-color: #ccc;
+        }
+        .form-inline .form-group #vsg-vurl {
+            width: 450px;
+        }
+        #vsg-scroll {
+            /*            overflow-y: scroll;*/
+            overflow-y: auto;
+            height: 690px
+        }
+        form label {
+            /*            color: #e99002;*/
+            font-size: 14px;
+            font-weight: bold
+        }
+        .slider.slider-horizontal {
+            width: 88%;
+        }
+        .bootstrap-select.btn-group .dropdown-menu {
+            -webkit-box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 3px;
+            -moz-box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 3px;
+            box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 3px;
+        }
+        /************************ GC COLORPICKER OVERWRITE ************************/
+        .colorpicker .colorpicker-saturation {
+            width: 125px;
+            height: 125px;
+        }
+        .colorpicker .colorpicker-hue,
+        .colorpicker .colorpicker-alpha {
+            width: 20px;
+            height: 125px;
+        }
+        .colorpicker .colorpicker-color,
+        .colorpicker .colorpicker-color div {
+            height: 20px;
+        }
+        #menu {
+            float: right;
+            margin-top: 26px
+        }
+        #menu img {
+            vertical-align:top;
+            width:20px;
+            height:20px;
+            margin-right: 5px
+        }
+
+    </style>
+
+<style type="text/css">
+.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style><style id="formtocss-styles" type="text/css">.video-js .vjs-menu-button-inline.vjs-slider-active,.video-js .vjs-menu-button-inline:focus,.video-js .vjs-menu-button-inline:hover,.video-js.vjs-no-flex .vjs-menu-button-inline {
+    width: 10em
+}
+
+.video-js .vjs-controls-disabled .vjs-big-play-button {
+    display: none!important
+}
+
+.video-js .vjs-control {
+    width: 3em
+}
+
+.video-js .vjs-menu-button-inline:before {
+    width: 1.5em
+}
+
+.vjs-menu-button-inline .vjs-menu {
+    left: 3em
+}
+
+.vjs-paused.vjs-has-started.video-js .vjs-big-play-button,.video-js.vjs-ended .vjs-big-play-button,.video-js.vjs-paused .vjs-big-play-button {
+    display: block
+}
+
+.video-js .vjs-load-progress div,.vjs-seeking .vjs-big-play-button,.vjs-waiting .vjs-big-play-button {
+    display: none!important
+}
+
+.video-js .vjs-mouse-display:after,.video-js .vjs-play-progress:after {
+    padding: 0 .4em .3em
+}
+
+.video-js.vjs-ended .vjs-loading-spinner {
+    display: none;
+}
+
+.video-js.vjs-ended .vjs-big-play-button {
+    display: block !important;
+}
+
+.video-js *,.video-js:after,.video-js:before {
+    box-sizing: inherit;
+    font-size: inherit;
+    color: inherit;
+    line-height: inherit
+}
+
+.video-js.vjs-fullscreen,.video-js.vjs-fullscreen .vjs-tech {
+    width: 100%!important;
+    height: 100%!important
+}
+
+.video-js {
+    font-size: 14px;
+    overflow: hidden
+}
+
+.video-js .vjs-control {
+    color: inherit
+}
+
+.video-js .vjs-menu-button-inline:hover,.video-js.vjs-no-flex .vjs-menu-button-inline {
+    width: 8.35em
+}
+
+.video-js .vjs-volume-menu-button.vjs-volume-menu-button-horizontal:hover .vjs-menu .vjs-menu-content {
+    height: 3em;
+    width: 6.35em
+}
+
+.video-js .vjs-control:focus:before,.video-js .vjs-control:hover:before {
+    text-shadow: 0 0 1em #fff,0 0 1em #fff,0 0 1em #fff
+}
+
+.video-js .vjs-spacer,.video-js .vjs-time-control {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: 1 1 auto;
+    -moz-box-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+.video-js .vjs-time-control {
+    -webkit-box-flex: 0 1 auto;
+    -moz-box-flex: 0 1 auto;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: auto
+}
+
+.video-js .vjs-time-control.vjs-time-divider {
+    width: 14px
+}
+
+.video-js .vjs-time-control.vjs-time-divider div {
+    width: 100%;
+    text-align: center
+}
+
+.video-js .vjs-time-control.vjs-current-time {
+    margin-left: 1em
+}
+
+.video-js .vjs-time-control .vjs-current-time-display,.video-js .vjs-time-control .vjs-duration-display {
+    width: 100%
+}
+
+.video-js .vjs-time-control .vjs-current-time-display {
+    text-align: right
+}
+
+.video-js .vjs-time-control .vjs-duration-display {
+    text-align: left
+}
+
+.video-js .vjs-play-progress:before,.video-js .vjs-progress-control .vjs-play-progress:before,.video-js .vjs-remaining-time,.video-js .vjs-volume-level:after,.video-js .vjs-volume-level:before,.video-js.vjs-live .vjs-time-control.vjs-current-time,.video-js.vjs-live .vjs-time-control.vjs-duration,.video-js.vjs-live .vjs-time-control.vjs-time-divider,.video-js.vjs-no-flex .vjs-time-control.vjs-remaining-time {
+    display: none
+}
+
+.video-js.vjs-no-flex .vjs-time-control {
+    display: table-cell;
+    width: 4em
+}
+
+.video-js .vjs-progress-control {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: .5em;
+    top: -.5em
+}
+
+.video-js .vjs-progress-control .vjs-load-progress,.video-js .vjs-progress-control .vjs-play-progress,.video-js .vjs-progress-control .vjs-progress-holder {
+    height: 100%
+}
+
+.video-js .vjs-progress-control .vjs-progress-holder {
+    margin: 0
+}
+
+.video-js .vjs-progress-control:hover {
+    height: 1.5em;
+    top: -1.5em
+}
+
+.video-js .vjs-control-bar {
+    -webkit-transition: -webkit-transform .1s ease 0s;
+    -moz-transition: -moz-transform .1s ease 0s;
+    -ms-transition: -ms-transform .1s ease 0s;
+    -o-transition: -o-transform .1s ease 0s;
+    transition: transform .1s ease 0s
+}
+
+.video-js.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-control-bar,.video-js.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-control-bar,.video-js.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-control-bar,.video-js.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar,.video-js.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar {
+    visibility: visible;
+    opacity: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateY(3em);
+    -moz-transform: translateY(3em);
+    -ms-transform: translateY(3em);
+    -o-transform: translateY(3em);
+    transform: translateY(3em);
+    -webkit-transition: -webkit-transform 1s ease 0s;
+    -moz-transition: -moz-transform 1s ease 0s;
+    -ms-transition: -ms-transform 1s ease 0s;
+    -o-transition: -o-transform 1s ease 0s;
+    transition: transform 1s ease 0s
+}
+
+.video-js.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-progress-control,.video-js.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-progress-control,.video-js.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-progress-control,.video-js.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-progress-control,.video-js.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-progress-control {
+    height: .25em;
+    top: -.25em;
+    pointer-events: none;
+    -webkit-transition: height 1s,top 1s;
+    -moz-transition: height 1s,top 1s;
+    -ms-transition: height 1s,top 1s;
+    -o-transition: height 1s,top 1s;
+    transition: height 1s,top 1s
+}
+
+.video-js.not-hover.vjs-has-started.vjs-paused.vjs-user-active.vjs-fullscreen .vjs-progress-control,.video-js.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive.vjs-fullscreen .vjs-progress-control,.video-js.not-hover.vjs-has-started.vjs-playing.vjs-user-active.vjs-fullscreen .vjs-progress-control,.video-js.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive.vjs-fullscreen .vjs-progress-control,.video-js.vjs-has-started.vjs-playing.vjs-user-inactive.vjs-fullscreen .vjs-progress-control {
+    opacity: 0;
+    -webkit-transition: opacity 1s ease 1s;
+    -moz-transition: opacity 1s ease 1s;
+    -ms-transition: opacity 1s ease 1s;
+    -o-transition: opacity 1s ease 1s;
+    transition: opacity 1s ease 1s
+}
+
+.video-js.vjs-live .vjs-live-control {
+    margin-left: 1em
+}
+
+.video-js .vjs-big-play-button {
+    top: 50%;
+    left: 50%;
+    margin-left: -1em;
+    margin-top: -1em;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    border: none;
+    border-radius: 50%;
+    font-size: 3.5em;
+    background-color: rgba(0,0,0,.45);
+    color: #fff;
+    -webkit-transition: border-color .4s,outline .4s,background-color .4s;
+    -moz-transition: border-color .4s,outline .4s,background-color .4s;
+    -ms-transition: border-color .4s,outline .4s,background-color .4s;
+    -o-transition: border-color .4s,outline .4s,background-color .4s;
+    transition: border-color .4s,outline .4s,background-color .4s
+}
+
+.video-js .vjs-menu-button-popup .vjs-menu {
+    left: -3em
+}
+
+.video-js .vjs-menu-button-popup .vjs-menu .vjs-menu-content {
+    background-color: transparent;
+    width: 12em;
+    left: -1.5em;
+    padding-bottom: .5em
+}
+
+.video-js .vjs-menu-button-popup .vjs-menu .vjs-menu-item,.video-js .vjs-menu-button-popup .vjs-menu .vjs-menu-title {
+    background-color: #151b17;
+    margin: .3em 0;
+    padding: .5em;
+    border-radius: .3em
+}
+
+.video-js .vjs-menu-button-popup .vjs-menu .vjs-menu-item.vjs-selected {
+    background-color: #2483d5
+}
+
+.video-js .vjs-big-play-button {
+    background-color: rgba(0,0,0,0.45);
+    font-size: 3.5em;
+    border-radius: 50%;
+    height: 2em !important;
+    line-height: 2em !important;
+    margin-top: -1em !important
+}
+
+.video-js:hover .vjs-big-play-button,.video-js .vjs-big-play-button:focus,.video-js .vjs-big-play-button:active {
+    background-color: rgba(36,131,213,0.9)
+}
+
+.video-js .vjs-loading-spinner {
+    border-color: rgba(36,131,213,0.8)
+}
+
+.video-js .vjs-control-bar2 {
+    background-color: #000000
+}
+
+.video-js .vjs-control-bar {
+    background-color: rgba(0,0,0,0.3) !important;
+    color: #ffffff;
+    font-size: 14px
+}
+
+.video-js .vjs-play-progress,.video-js  .vjs-volume-level {
+    background-color: #2483d5
+}</style></head>
+
+<body>
+
+    <div class="container">
+        <div class="help-block"></div>
+        <h1>Videojs Skin Generator</h1>
+        <div class="row">
+            <!-- Left Panel  -->
+            <div id="vsg-scroll" class="col-md-5" style="height: 729px;">
+                <!-- Skins -->
+                <form role="form" class="formtocss">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Skin chooser</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p>Choose your skin below:</p>
+                            <div class="btn-group bootstrap-select show-tick"><div class="dropdown-menu open" role="combobox" style="max-height: 258px; overflow: hidden; min-height: 79px;"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false" style="max-height: 248px; overflow-y: auto; min-height: 69px;"><li data-original-index="0" class=""><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">PREBUILD SKINS</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1" class="selected"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="true"><span class="text">VSG</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Sublim</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Magnified</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">SunRise</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">TechSkin</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Youtube</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Facebook Player</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="8"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Twitter</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="9"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Rotten Tomatoes</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="10"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">twitch.tv</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="11"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Reset</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div><select id="skinselect" class="selectpicker show-tick" name="skinSelect:skip" data-style="btn-primary" tabindex="-98"><option selected="" value="VSG">PREBUILD SKINS</option><option value="VSG">VSG</option><option value="Sublim">Sublim</option><option value="Magnified">Magnified</option><option value="SunRise">SunRise</option><option value="TechSkin">TechSkin</option><option value="Youtube">Youtube</option><option value="Facebook Player">Facebook Player</option><option value="Twitter">Twitter</option><option value="Rotten Tomatoes">Rotten Tomatoes</option><option value="twitch.tv">twitch.tv</option><option value="Reset">Reset</option></select></div>
+
+                            <button type="button" id="vsg-reset" class="btn btn-warning">Reset All</button>
+                            <div class="help-block"></div>
+
+
+
+                            <input type="text" class="adminShow" id="skin" name="skin:skip" value="vsg">
+
+                            <div class="col-md-12" id="chooseSkin">
+                                <div class="radio radio-warning radio-inline">
+                                    <input type="radio" id="vsg-skins1" value="vsg" name="vsg-skins:skip" checked="checked">
+                                    <label for="vsg-skins1"> Style 1</label>
+                                </div>
+                                <div class="radio radio-warning radio-inline">
+                                    <input type="radio" id="vsg-skins2" value="default" name="vsg-skins:skip">
+                                    <label for="vsg-skins2"> Style 2</label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- BIG BUTTON PLAY & SPINNER -->
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Big play button &amp; Loading Spinning</h3>
+                        </div>
+                        <div class="panel-body">
+
+                            <div class="form-group">
+
+                                <!-- BIG BUTTON PLAY -->
+                                <label for="vsg-big-play">Big button play: Background Color (with opacity)</label>
+
+                                <div id="vsg-big-play" class="bs-colorpicker input-group colorpicker-component colorpicker-element"><input type="text" data-colorid="vsg-big-play" name=".vjs-big-play-button[background-color]" class="form-control" value="rgba(0, 0, 0, .45)"><span class="input-group-addon"><i style="background-color: rgba(0, 0, 0, 0.45098);"></i></span></div>
+                                <br>
+                                <!-- BIG BUTTON PLAY HOVER -->
+                                <label for="vsg-big-play-hover">Big button play:Hover Background Color</label>
+                                <!--                                <input type="color" data-colorid="vsg-big-play" name=".vjs-big-play-button@active|.vjs-big-play-button@focus| @active .vjs-big-play-button| @hover .vjs-big-play-button[background-color]:important" class="form-control" value="rgba(36, 131, 213, 0.9)">-->
+
+                                <div id="vsg-big-play-hover" class="bs-colorpicker input-group colorpicker-component colorpicker-element"><input type="text" data-colorid="vsg-big-play-hover" name="@hover .vjs-big-play-button|.vjs-big-play-button@focus|.vjs-big-play-button@active[background-color]" class="form-control" value="rgba(36, 131, 213, 0.9)"><span class="input-group-addon"><i style="background-color: rgba(36, 131, 213, 0.901961);"></i></span></div>
+                                <br>
+                                <!-- BIG BUTTON SIZE -->
+                                <label for="vsg-big-play-size">Big button play size</label>
+                                <input id="vsg-big-play-size" class="slider" name=".vjs-big-play-button[font-size]:em" type="text" data-slider-min="1" data-slider-max="8" data-slider-step=".5" data-slider-value="3.5" data-value="3.5" value="3.5" style="display: none;"> <span id="vsg-big-play-sizeVal">3.5</span> <small>em</small>
+                                <br>
+                                <br>
+                                <!-- BIG BUTTON BORDER-RADIUS -->
+                                <label for="vsg-buttonRadius">Big button play Border Radius</label>
+                                <input id="vsg-buttonRadius" class="slider" name=".vjs-big-play-button[border-radius]:percent" type="text" data-slider-min="0" data-slider-max="50" data-slider-step="1" data-slider-value="50" data-value="50" value="50" style="display: none;"> <span id="vsg-buttonRadiusVal">50</span> <small>%</small>
+                                <br>
+                                <br>
+                                <!-- BIG BUTTON HEIGHT -->
+                                <label for="vsg-big-play-height">Big button play height: ( Choose 2em for perfect cicle and 50% border-radius)</label>
+                                <input type="hidden" id="vsg-big-play-height-hidden" name=".vjs-big-play-button[height]:emimportant" value="2">
+                                <input type="hidden" id="vsg-big-play-line-height-hidden" name=".vjs-big-play-button[line-height]:emimportant" value="2">
+                                <input type="hidden" id="vsg-big-play-top-hidden" name=".vjs-big-play-button[margin-top]:emimportant" value="-1">
+
+                                <input id="vsg-big-play-height" class="slider" name="radius:skip" type="text" data-slider-min="1" data-slider-max="2" data-slider-step=".1" data-slider-value="2" data-value="2" value="2" style="display: none;"> <span id="vsg-big-play-heightVal">2</span> <small>em</small>
+
+                                <br>
+                                <hr>
+                                <!-- SPINNER -->
+                                <label for="vsg-spinner-color">Spining Color</label>
+                                <div id="vsg-spinner-color" class="bs-colorpicker input-group colorpicker-component colorpicker-element"><input type="text" data-colorid="vsg-spinner-color" name=".vjs-loading-spinner[border-color]" class="form-control" value="rgba(36,131,213,0.8)"><span class="input-group-addon"><i style="background-color: rgba(36, 131, 213, 0.8);"></i></span></div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <!-- Control -->
+                    <!--                <form class="formtocss">-->
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Control</h3>
+                        </div>
+                        <div class="panel-body">
+
+                            <div class="form-group">
+
+
+
+                                <label for="vsg-cont-color">Control background color (with opacity)</label>
+                                <input type="hidden" id="cont-bcolor" name=".vjs-control-bar2[background-color]" value="#000000">
+                                <div id="vsg-cont-color" class="bs-colorpicker input-group colorpicker-component colorpicker-element"><input type="text" data-field="contcolor" data-colorid="vsg-cont-color" name=".vjs-control-bar[background-color]:important" class="form-control" value="rgba(0,0,0,0.3)"><span class="input-group-addon"><i style="background-color: rgba(0, 0, 0, 0.298039);"></i></span></div>
+                                <br>
+
+                                <label for="vsg-butt-color">All Buttons color (with opacity)</label>
+                                <div id="vsg-btn-color" class="bs-colorpicker input-group colorpicker-component colorpicker-element"><input type="text" data-colorid="vsg-btn-color" name=".vjs-control-bar[color]" class="form-control" value="#ffffff"><span class="input-group-addon"><i style="background-color: rgb(255, 255, 255);"></i></span></div>
+                                <br>
+
+                                <label for="vsg-progress">Progress bar Color</label>
+                                <div id="vsg-progress" class="bs-colorpicker input-group colorpicker-component colorpicker-element"><input type="text" data-field="progress" data-colorid="vsg-progress" name=".vjs-play-progress| .vjs-volume-level[background-color]" class="form-control" value="#2483d5"><span class="input-group-addon"><i style="background-color: rgb(36, 131, 213);"></i></span></div>
+                                <div class="help-block"></div>
+
+                                <label for="vsg-buttonsize">Buttons Control Size</label>
+                                <br>
+
+                                <input type="text" id="vsg-buttonsize" class="slider" name=".vjs-control-bar[font-size]:px" data-slider-min="9" data-slider-max="30" data-slider-step="1" data-slider-value="14" data-value="14" value="14" style="display: none;"> <span id="vsg-buttonsizeVal">14</span> <small>px</small>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- BIG BUTTON PLAY & SPINNER -->
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Custom CSS</h3>
+                        </div>
+                        <div class="panel-body">
+
+                            <!-- Textarea -->
+                            <div class="form-group">
+                                <label for="customcss">Advanced CSS Customization</label>
+
+                                <textarea id="customcss" rows="6" name="customcss:skip" class="form-control" placeholder=".video-js .targetClass {
+    height: 20px;
+}"></textarea>
+                                <span class="help-block">Start with .video-js Class name
+                                </span>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+
+                <div class="help-block"></div>
+
+                <div class="adminShow">
+
+                    <div class="form-group">
+                        <button type="button" id="fillform" class="btn btn-default pull-right">Set Skin</button>
+                    </div>
+
+                    <button type="submit" id="getform" class="btn btn-default pull-right">Get Skin</button>
+                    <div class="col-md-12" style="padding:0">
+                        <textarea class="form-control" rows="9" id="populateform"></textarea>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- left panel end-->
+
+            <!-- RIGHT PANEL -->
+            <div class="col-md-7">
+
+                <!-- mediaelement -->
+                <div class="plugin-example-container">
+
+                    <div class="plugin-example">
+
+                        <div data-setup="{ &quot;techOrder&quot;: [&quot;html5&quot;, &quot;flash&quot;, &quot;youtube&quot;], &quot;sources&quot;: [{ &quot;type&quot;: &quot;video/youtube&quot;, &quot;src&quot;: &quot;https://www.youtube.com/watch?v=f5nuuy_F4rs&quot;}], &quot;youtube&quot;: { &quot;iv_load_policy&quot;: 3 } }" class="video-js vjs-fluid vsg-player vjs-paused vid1-dimensions vjs-controls-enabled vjs-workinghover vjs-youtube vjs-user-inactive" id="vid1" role="region" aria-label="video player"><div><iframe id="vid1_Youtube_api" style="width:100%;height:100%;top:0;left:0;position:absolute" class="vjs-tech" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/f5nuuy_F4rs?controls=0&amp;modestbranding=1&amp;rel=0&amp;showinfo=0&amp;loop=0&amp;fs=0&amp;hl=en&amp;iv_load_policy=3&amp;enablejsapi=1&amp;origin=http%3A%2F%2Fwww.scriptsmashup.com&amp;widgetid=1"></iframe><div class="vjs-iframe-blocker" style="position:absolute;top:0;left:0;width:100%;height:100%"></div></div><div></div><div class="vjs-poster" tabindex="-1" style="background-image: url(https://img.youtube.com/vi/f5nuuy_F4rs/maxresdefault.jpg);"></div><div class="vjs-text-track-display" aria-live="assertive" aria-atomic="true"><div style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; margin: 1.5%;"></div></div><div class="vjs-loading-spinner" dir="ltr"></div><button class="vjs-big-play-button" type="button" aria-live="polite" title="Play Video"><span class="vjs-control-text">Play Video</span></button><div class="vjs-control-bar" dir="ltr" role="group"><button class="vjs-play-control vjs-control vjs-button " type="button" aria-live="polite" title="Play"><span class="vjs-control-text">Play</span></button><div class="vjs-volume-menu-button vjs-menu-button vjs-menu-button-inline vjs-control vjs-button vjs-volume-menu-button-horizontal vjs-vol-3" tabindex="0" role="button" aria-live="polite" title="Mute"><div class="vjs-menu"><div class="vjs-menu-content"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" aria-label="volume level" aria-valuetext="100.00%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div><span class="vjs-control-text">Mute</span></div><div class="vjs-current-time vjs-time-control vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time </span>0:00</div></div><div class="vjs-time-control vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-control vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 0:00</div></div><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" aria-label="progress bar" aria-valuetext="0:00"><div class="vjs-load-progress" style="width: 0%;"><span class="vjs-control-text" style="left: 0%; width: 0%;"><span>Loaded</span>: 0%</span></div><div class="vjs-mouse-display" data-current-time="0:00" style="left: 0px;"></div><div class="vjs-play-progress vjs-slider-bar" data-current-time="0:00"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div></div></div><div class="vjs-live-control vjs-control vjs-hidden"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-remaining-time vjs-time-control vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -0:00</div></div><div class="vjs-custom-control-spacer vjs-spacer ">&nbsp;</div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Playback Rate" aria-expanded="false" aria-haspopup="true"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"></ul></div><span class="vjs-control-text">Playback Rate</span><div class="vjs-playback-rate-value">1</div></div><div class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Chapters" aria-expanded="false" aria-haspopup="true" aria-label="Chapters Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-title" tabindex="-1">Chapters</li></ul></div><span class="vjs-control-text">Chapters</span></div><div class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Descriptions" aria-expanded="false" aria-haspopup="true" aria-label="Descriptions Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-checked="true" title=", selected">descriptions off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Descriptions</span></div><div class="vjs-subtitles-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Subtitles" aria-expanded="false" aria-haspopup="true" aria-label="Subtitles Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-checked="true" title=", selected">subtitles off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Subtitles</span></div><div class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Captions" aria-expanded="false" aria-haspopup="true" aria-label="Captions Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-texttrack-settings" tabindex="-1" role="menuitem" aria-live="polite" title=", opens captions settings dialog">captions settings<span class="vjs-control-text">, opens captions settings dialog</span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-checked="true" title=", selected">captions off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Captions</span></div><div class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Audio Track" aria-expanded="false" aria-haspopup="true" aria-label="Audio Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"></ul></div><span class="vjs-control-text">Audio Track</span></div><button class="vjs-fullscreen-control vjs-control vjs-button " type="button" aria-live="polite" title="Fullscreen"><span class="vjs-control-text">Fullscreen</span></button></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="vid1_component_347_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-offscreen" id="vid1_component_347_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div><div class="vjs-caption-settings vjs-modal-overlay vjs-hidden" tabindex="-1" role="dialog" aria-labelledby="TTsettingsDialogLabel-vid1_component_352" aria-describedby="TTsettingsDialogDescription-vid1_component_352">
+    <div role="document">
+      <div role="heading" aria-level="1" id="TTsettingsDialogLabel-vid1_component_352" class="vjs-control-text">Captions Settings Dialog</div>
+      <div id="TTsettingsDialogDescription-vid1_component_352" class="vjs-control-text">Beginning of dialog window. Escape will cancel and close the window.</div>
+      <div class="vjs-tracksettings">
+        <div class="vjs-tracksettings-colors">
+          <fieldset class="vjs-fg-color vjs-tracksetting">
+            <legend>Text</legend>
+            <label class="vjs-label" for="captions-foreground-color-vid1_component_352">Color</label>
+            <select id="captions-foreground-color-vid1_component_352">
+              <option value="#FFF" selected="">White</option>
+              <option value="#000">Black</option>
+              <option value="#F00">Red</option>
+              <option value="#0F0">Green</option>
+              <option value="#00F">Blue</option>
+              <option value="#FF0">Yellow</option>
+              <option value="#F0F">Magenta</option>
+              <option value="#0FF">Cyan</option>
+            </select>
+            <span class="vjs-text-opacity vjs-opacity">
+              <label class="vjs-label" for="captions-foreground-opacity-vid1_component_352">Transparency</label>
+              <select id="captions-foreground-opacity-vid1_component_352">
+                <option value="1" selected="">Opaque</option>
+                <option value="0.5">Semi-Opaque</option>
+              </select>
+            </span>
+          </fieldset>
+          <fieldset class="vjs-bg-color vjs-tracksetting">
+            <legend>Background</legend>
+            <label class="vjs-label" for="captions-background-color-vid1_component_352">Color</label>
+            <select id="captions-background-color-vid1_component_352">
+              <option value="#000" selected="">Black</option>
+              <option value="#FFF">White</option>
+              <option value="#F00">Red</option>
+              <option value="#0F0">Green</option>
+              <option value="#00F">Blue</option>
+              <option value="#FF0">Yellow</option>
+              <option value="#F0F">Magenta</option>
+              <option value="#0FF">Cyan</option>
+            </select>
+            <span class="vjs-bg-opacity vjs-opacity">
+              <label class="vjs-label" for="captions-background-opacity-vid1_component_352">Transparency</label>
+              <select id="captions-background-opacity-vid1_component_352">
+                <option value="1" selected="">Opaque</option>
+                <option value="0.5">Semi-Transparent</option>
+                <option value="0">Transparent</option>
+              </select>
+            </span>
+          </fieldset>
+          <fieldset class="window-color vjs-tracksetting">
+            <legend>Window</legend>
+            <label class="vjs-label" for="captions-window-color-vid1_component_352">Color</label>
+            <select id="captions-window-color-vid1_component_352">
+              <option value="#000" selected="">Black</option>
+              <option value="#FFF">White</option>
+              <option value="#F00">Red</option>
+              <option value="#0F0">Green</option>
+              <option value="#00F">Blue</option>
+              <option value="#FF0">Yellow</option>
+              <option value="#F0F">Magenta</option>
+              <option value="#0FF">Cyan</option>
+            </select>
+            <span class="vjs-window-opacity vjs-opacity">
+              <label class="vjs-label" for="captions-window-opacity-vid1_component_352">Transparency</label>
+              <select id="captions-window-opacity-vid1_component_352">
+                <option value="0" selected="">Transparent</option>
+                <option value="0.5">Semi-Transparent</option>
+                <option value="1">Opaque</option>
+              </select>
+            </span>
+          </fieldset>
+        </div> <!-- vjs-tracksettings-colors -->
+        <div class="vjs-tracksettings-font">
+          <div class="vjs-font-percent vjs-tracksetting">
+            <label class="vjs-label" for="captions-font-size-vid1_component_352">Font Size</label>
+            <select id="captions-font-size-vid1_component_352">
+              <option value="0.50">50%</option>
+              <option value="0.75">75%</option>
+              <option value="1.00" selected="">100%</option>
+              <option value="1.25">125%</option>
+              <option value="1.50">150%</option>
+              <option value="1.75">175%</option>
+              <option value="2.00">200%</option>
+              <option value="3.00">300%</option>
+              <option value="4.00">400%</option>
+            </select>
+          </div>
+          <div class="vjs-edge-style vjs-tracksetting">
+            <label class="vjs-label" for="captions-edge-style-vid1_component_352">Text Edge Style</label>
+            <select id="captions-edge-style-vid1_component_352">
+              <option value="none" selected="">None</option>
+              <option value="raised">Raised</option>
+              <option value="depressed">Depressed</option>
+              <option value="uniform">Uniform</option>
+              <option value="dropshadow">Dropshadow</option>
+            </select>
+          </div>
+          <div class="vjs-font-family vjs-tracksetting">
+            <label class="vjs-label" for="captions-font-family-vid1_component_352">Font Family</label>
+            <select id="captions-font-family-vid1_component_352">
+              <option value="proportionalSansSerif" selected="">Proportional Sans-Serif</option>
+              <option value="monospaceSansSerif">Monospace Sans-Serif</option>
+              <option value="proportionalSerif">Proportional Serif</option>
+              <option value="monospaceSerif">Monospace Serif</option>
+              <option value="casual">Casual</option>
+              <option value="script">Script</option>
+              <option value="small-caps">Small Caps</option>
+            </select>
+          </div>
+        </div> <!-- vjs-tracksettings-font -->
+        <div class="vjs-tracksettings-controls">
+          <button class="vjs-default-button">Defaults</button>
+          <button class="vjs-done-button">Done</button>
+        </div>
+      </div> <!-- vjs-tracksettings -->
+    </div> <!--  role="document" --></div></div>
+
+                    </div>
+
+                    <small class="help-block text-right"><span id="vidlink" class="pull-left"><strong>Load Video: <a title="Load video" href="http://podcast.rickygervais.com/rickyandpepe_twitter.mp4">Ricky &amp; Pepe</a> |
+<!--                        https://videos.files.wordpress.com/kUJmAcSf/bbb_sunflower_1080p_30fps_normal_hd.mp4">Big bunny-->
+                        <a title="Load video" href="http://distribution.bbb3d.renderfarming.net/video/mp4/bbb_sunflower_1080p_60fps_normal.mp4">Big bunny</a> |
+                        <a title="Load video" href="https://www.youtube.com/watch?v=kkGeOWYOFoA">Youtube</a> |
+                        <a title="Load video" href="http://assets3.ign.com/videos/zencoder/2016/06/15/640/7080c56a76e2b74ec8ecfe4c224441d4-500000-1466028542-w.mp4">Zelda</a> |
+                        <a title="Load video" href="http://vjs.zencdn.net/v/oceans.mp4">Ocean</a> |
+                        <a title="Load video" href="http://techslides.com/demos/sample-videos/small.flv">FLV</a>
+                        </strong>
+                        </span> Enter Video URL: Youtube, MP4, M4V FLV, WEBM
+                    </small>
+
+                    <!-- form load youtube video -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form class="" id="vsg-loadvideo">
+                                <div class="input-group input-group">
+                                    <input type="text" class="form-control" id="vsg-vurl" value="https://www.youtube.com/watch?v=xDMP3i36naA" placeholder="Enter Youtube URL">
+                                    <span class="input-group-btn">
+        <button class="btn btn-danger" type="submit"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Load Video</button>
+                                    </span>
+                                </div>
+
+                                <!-- /input-group -->
+                            </form>
+                        </div>
+                        <!-- /.col-lg-6 -->
+                    </div>
+                    <!-- /.row -->
+                    <!-- form load youtube video END -->
+
+
+                    <div class="form-group">
+
+                        <div id="options" class="pull-right">
+                            <button type="button" id="minify" class="btn btn-info" data-toggle="tooltip" title="" data-original-title="Compress CSS style">Minify</button>
+                            <button type="button" id="copy" class="btn btn-warning" data-toggle="tooltip" title="" data-original-title="Copy CSS to clipboard">Copy</button>
+                            <button type="button" id="download" class="btn btn-danger" data-toggle="tooltip" title="" data-original-title="Download CSS with HTML demo page">Download</button>
+                        </div>
+
+                        <h3 class="control-label">CSS result</h3>
+                        <div class="col-md-12" style="padding:0">
+                            <textarea class="form-control" rows="9" id="css_result">/* CSS RESULT */</textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- VIDEOJS  -->
+    <script src="https://vjs.zencdn.net/5.11.9/video.js"></script>
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src="https://rawgit.com/videojs/videojs-youtube/master/src/Youtube.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/marioizquierdo/jquery.serializeJSON/master/jquery.serializejson.min.js"></script>
+    <script src="https://cdn.rawgit.com/senchalabs/cssbeautify/master/cssbeautify.js"></script>
+    <script src="js/csso-browser.js"></script>
+    <script src="https://cdn.rawgit.com/onigetoc/FormToCSS/master/js/cssParser.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+    <script src="https://cdn.rawgit.com/Stuk/jszip-utils/master/dist/jszip-utils.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <!-- VSG SCRIPT  -->
+    <script src="js/formtocss.js"></script>
+
+
+    <!-- bootstrap-select  -->
+    <script src="https://cdn.rawgit.com/silviomoreto/bootstrap-select/master/js/bootstrap-select.js"></script>
+    <!-- bootstrap-slider  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.1.0/bootstrap-slider.min.js"></script>
+
+    <!-- bootstrap-colorpicker  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-colorpicker/2.3.3/js/bootstrap-colorpicker.min.js"></script>
+
+    <!-- jQuery-form-serializer  -->
+    <script src="js/jsonify-GC.min.js"></script>
+
+    <script src="js/vsgweb.js"></script>
+    <script src="js/vsg.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-383925-43', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+
+
+
+<div class="colorpicker dropdown-menu colorpicker-hidden colorpicker-with-alpha colorpicker-right"><div class="colorpicker-saturation" style="background-color: rgb(0, 0, 0);"><i style="top: 100px; left: 0px;"><b></b></i></div><div class="colorpicker-hue"><i style="top: 100px;"></i></div><div class="colorpicker-alpha" style="background-color: rgb(0, 0, 0);"><i style="top: 55.00000000000001px;"></i></div><div class="colorpicker-color" style="background-color: rgba(0, 0, 0, 0.45098);"><div style="background-color: rgba(0, 0, 0, 0.45098);"></div></div><div class="colorpicker-selectors"></div></div><div class="colorpicker dropdown-menu colorpicker-hidden colorpicker-with-alpha colorpicker-right"><div class="colorpicker-saturation" style="background-color: rgb(0, 137, 255);"><i style="top: 16.470588235294116px; left: 83.09859154929576px;"><b></b></i></div><div class="colorpicker-hue"><i style="top: 42.278719397363794px;"></i></div><div class="colorpicker-alpha" style="background-color: rgb(36, 131, 213);"><i style="top: 9.999999999999998px;"></i></div><div class="colorpicker-color" style="background-color: rgba(36, 131, 213, 0.901961);"><div style="background-color: rgba(36, 131, 213, 0.901961);"></div></div><div class="colorpicker-selectors"></div></div><div class="colorpicker dropdown-menu colorpicker-hidden colorpicker-with-alpha colorpicker-right"><div class="colorpicker-saturation" style="background-color: rgb(0, 137, 255);"><i style="top: 16.470588235294116px; left: 83.09859154929576px;"><b></b></i></div><div class="colorpicker-hue"><i style="top: 42.278719397363794px;"></i></div><div class="colorpicker-alpha" style="background-color: rgb(36, 131, 213);"><i style="top: 19.999999999999996px;"></i></div><div class="colorpicker-color" style="background-color: rgba(36, 131, 213, 0.8);"><div style="background-color: rgba(36, 131, 213, 0.8);"></div></div><div class="colorpicker-selectors"></div></div><div class="colorpicker dropdown-menu colorpicker-hidden colorpicker-with-alpha colorpicker-right"><div class="colorpicker-saturation" style="background-color: rgb(255, 255, 255);"><i style="top: 0px; left: 0px;"><b></b></i></div><div class="colorpicker-hue"><i style="top: 100px;"></i></div><div class="colorpicker-alpha" style="background-color: rgb(255, 255, 255);"><i style="top: 0px;"></i></div><div class="colorpicker-color" style="background-color: rgb(255, 255, 255);"><div style="background-color: rgb(255, 255, 255);"></div></div><div class="colorpicker-selectors"></div></div><div class="colorpicker dropdown-menu colorpicker-hidden colorpicker-with-alpha colorpicker-right"><div class="colorpicker-saturation" style="background-color: rgb(0, 137, 255);"><i style="top: 16.470588235294116px; left: 83.09859154929576px;"><b></b></i></div><div class="colorpicker-hue"><i style="top: 42.278719397363794px;"></i></div><div class="colorpicker-alpha" style="background-color: rgb(36, 131, 213);"><i style="top: 0px;"></i></div><div class="colorpicker-color" style="background-color: rgb(36, 131, 213);"><div style="background-color: rgb(36, 131, 213);"></div></div><div class="colorpicker-selectors"></div></div><div class="colorpicker dropdown-menu colorpicker-hidden colorpicker-with-alpha colorpicker-right"><div class="colorpicker-saturation" style="background-color: rgb(0, 0, 0);"><i style="top: 100px; left: 0px;"><b></b></i></div><div class="colorpicker-hue"><i style="top: 100px;"></i></div><div class="colorpicker-alpha" style="background-color: rgb(0, 0, 0);"><i style="top: 70px;"></i></div><div class="colorpicker-color" style="background-color: rgba(0, 0, 0, 0.298039);"><div style="background-color: rgba(0, 0, 0, 0.298039);"></div></div><div class="colorpicker-selectors"></div></div></body></html>
